@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanifiQue - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+    />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-5">
+            <div class="box">
+              <h1 class="title has-text-centered">Login</h1>
+              <form id="login-form">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Seu email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Senha</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="password"
+                      placeholder="Sua senha"
+                      required
+                    />
+                  </div>
+                </div>
+                <p class="has-text-centered mt-3 mb-3">
+                  <a href="esqueceu-senha.html">Esqueceu sua senha?</a>
+                </p>
+                <div class="control">
+                  <button class="button is-primary is-fullwidth" type="submit">
+                    Entrar
+                  </button>
+                </div>
+                <p class="has-text-centered mt-3">
+                  Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/auth.js"></script>
+  </body>
+</html>

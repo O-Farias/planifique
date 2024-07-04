@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanifiQue - Categorias</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">PlanifiQue</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">Início</a>
+          <a class="navbar-item" href="categorias.html">Categorias</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Categorias</h1>
+        <h2 class="subtitle">Visualize os valores por categoria.</h2>
+
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="categories-tbody">
+              <!-- Valores por categoria -->
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="subtitle mt-5">Gerenciar Categorias</h2>
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="manage-categories-tbody">
+              <!-- Lista de categorias para gerenciar -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Scripts/categorias.js"></script>
+  </body>
+</html>

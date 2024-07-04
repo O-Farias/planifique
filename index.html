@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanifiQue</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">PlanifiQue</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">Início</a>
+          <a class="navbar-item" href="categorias.html">Categorias</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Gestão Financeira</h1>
+        <h2 class="subtitle">
+          Controle suas finanças de forma fácil e rápida.
+        </h2>
+
+        <!-- Formulário de entrada de dados -->
+        <div class="box">
+          <form id="transaction-form">
+            <div class="field">
+              <label class="label">Descrição</label>
+              <div class="control">
+                <input
+                  id="description"
+                  class="input"
+                  type="text"
+                  placeholder="Descrição da transação"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Valor</label>
+              <div class="control">
+                <input
+                  id="amount"
+                  class="input"
+                  type="text"
+                  placeholder="Valor da transação"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Data</label>
+              <div class="control">
+                <input id="date" class="input" type="date" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Categoria</label>
+              <div class="control">
+                <div class="select">
+                  <select id="category">
+                    <!-- Categorias serão adicionadas dinamicamente -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="control">
+              <button class="button is-primary" type="submit">
+                Adicionar Transação
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Formulário de criação de categorias -->
+        <div class="box">
+          <form id="category-form">
+            <div class="field">
+              <label class="label">Nova Categoria</label>
+              <div class="control">
+                <input
+                  id="new-category"
+                  class="input"
+                  type="text"
+                  placeholder="Nome da categoria"
+                />
+              </div>
+            </div>
+            <div class="control">
+              <button class="button is-primary" type="submit">
+                Adicionar Categoria
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tabela de transações -->
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Categoria</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="transactions-tbody">
+              <!-- Transações -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Scripts/script.js"></script>
+  </body>
+</html>
